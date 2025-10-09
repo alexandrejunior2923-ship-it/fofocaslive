@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho principal */
+.site-header {
+  background-color: #ff69b4;
+  color: white;
+  padding: 20px 0;
+  border-bottom: 4px solid #1e81bb;
+}
+
+.site-header .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand {
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Navegação */
+.main-nav {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #ffe4f0;
+  text-decoration: underline;
+}
+
+/* Segundo header (título da página) */
+header:not(.site-header) {
+  text-align: center;
+  background-color: #ffc1e3;
+  padding: 30px 15px;
+  margin-bottom: 30px;
+}
+
+header:not(.site-header) h1 {
+  color: #ff1493;
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+header:not(.site-header) p {
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+  color: #ff1493;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1em;
+  color: #555;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+/* Botão de envio */
+button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e64a95;
+}
+
+/* Informações de contato */
+.info-contato {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.info-contato h2 {
+  color: #ff1493;
+  margin-bottom: 15px;
+}
+
+.info-contato p {
+  font-size: 1em;
+  color: #444;
+  margin: 8px 0;
+}
+
+.info-contato a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: white; 
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 0.9em;
+  letter-spacing: 1px;/**/
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

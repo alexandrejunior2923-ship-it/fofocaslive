@@ -1,0 +1,45 @@
+/* marcas.css */
+:root{
+    --pink:#f06aa6;
+    --bg:#fafafa;
+    --muted:#666;
+    --white:#fff;
+  }
+  
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#222}
+  
+  /* header same look */
+  .site-header{background:var(--pink);color:#fff;padding:16px 0}
+  .wrap{width:min(1100px,94%);margin:0 auto}
+  .brand{display:inline-block;font-weight:800;font-size:30px;margin-right:20px}
+  .main-nav{display:inline-block}
+  .main-nav a{color:#fff;margin-right:14px;text-decoration:none}
+  .main-nav a.active{text-decoration:underline 2px rgba(255,255,255,0.25)}
+  
+  /* hero */
+  .marcas-hero{padding:50px 0;background:linear-gradient(180deg, rgba(240,106,166,0.06), transparent)}
+  .marcas-hero h2{font-size:30px;margin-bottom:6px}
+  .marcas-hero p{opacity:0.9}
+  
+  /* brand list */
+  .brand-list{padding:28px 0}
+  .brands{list-style:none;display:flex;flex-wrap:wrap;gap:14px}
+  .brands li{background:var(--white);padding:12px;border-radius:10px;display:flex;gap:12px;align-items:center;box-shadow:0 6px 18px rgba(0,0,0,0.04);width:100%;max-width:360px}
+  .brands img{width:64px;height:64px;object-fit:contain;border-radius:8px}
+  .brands strong{display:block}
+  .brands span{display:block;color:var(--muted);font-size:14px}
+  
+  /* promo card */
+  .promo{padding:28px 0;display:flex;justify-content:center}
+  .promo-card{background:var(--white);padding:20px;border-radius:12px;box-shadow:0 8px 26px rgba(0,0,0,0.06);text-align:center}
+  .promo-card h4{margin-bottom:8px}
+  .btn{display:inline-block;margin-top:8px;padding:8px 14px;background:var(--pink);color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+  
+  /* footer */
+  .site-footer{padding:16px 0;text-align:center;background:#222;color:#fff;margin-top:36px}
+  
+  /* responsive */
+  @media (max-width:700px){
+    .brands{flex-direction:column;align-items:stretch}
+  }

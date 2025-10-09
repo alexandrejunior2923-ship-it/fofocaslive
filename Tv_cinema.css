@@ -1,0 +1,45 @@
+/* tv_cinema.css - estilo próprio para a página TV & Cinema */
+:root{
+    --pink:#f06aa6;
+    --bg:#f1f1f1;
+    --dark:#333;
+    --card-bg:#fff;
+  }
+  
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; color:var(--dark); background:var(--bg);}
+  
+  /* header */
+  .site-header{background:var(--pink); color:#fff; padding:20px 0}
+  .wrap{width:min(1100px,94%);margin:0 auto}
+  .brand{font-size:34px;font-weight:800;display:inline-block;margin-right:30px}
+  .main-nav{display:inline-block;vertical-align:middle}
+  .main-nav a{color:rgba(255,255,255,0.9);margin-right:18px;text-decoration:none;font-weight:600}
+  .main-nav a.active{text-decoration:underline 2px rgba(255,255,255,0.25)}
+  
+  /* hero */
+  .hero{background:linear-gradient(180deg, rgba(0,0,0,0.05), transparent);padding:60px 0 40px;border-bottom:4px solid rgba(0,0,0,0.04)}
+  .hero-inner{display:flex;align-items:center;gap:20px}
+  .hero-emoji{font-size:48px}
+  .hero h2{font-size:36px;margin-bottom:8px}
+  .hero p{opacity:0.85}
+  
+  /* articles grid */
+  .articles{padding:40px 0}
+  .articles h3{font-size:20px;margin-bottom:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:var(--card-bg);padding:16px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+  .card img{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:12px}
+  .card h4{font-size:18px;margin-bottom:8px}
+  .card p{font-size:14px;margin-bottom:12px;color:#555}
+  .btn{display:inline-block;padding:8px 14px;background:var(--pink);color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+  
+  /* footer */
+  .site-footer{padding:18px 0;background:#222;color:#fff;text-align:center;margin-top:40px}
+  
+  /* responsive tweaks */
+  @media (max-width:560px){
+    .brand{font-size:24px}
+    .hero h2{font-size:24px}
+    .hero-inner{flex-direction:column;align-items:flex-start}
+  }

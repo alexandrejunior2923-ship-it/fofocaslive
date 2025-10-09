@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo geral */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;/*centraliza um elemento em seu contêiner horizontalmente, definindo margens
+   superior e inferior como 0 e as margens esquerda e direita como automáticas*/
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ff69b4;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #ff1493;
+}
+
+header h1 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe4f0;
+  text-decoration: underline;
+}
+
+/* Título da página */
+main h1,
+header + header h1 {
+  text-align: center;
+  color: #ff1493;
+  margin: 30px 0 10px;
+  font-size: 2em;
+}
+
+/* Texto de introdução */
+main p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+/* Grid dos jogadores */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+/* Cartões */
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagens dos jogadores */
+.card img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+
+/* Corpo do card */
+.card .body {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Nome do jogador */
+.card .name a {
+  color: #ff1493;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card .name a:hover {
+  text-decoration: underline;
+}
+
+/* Meta e descrição */
+.card .meta {
+  color: #666;
+  font-size: 0.95em;
+  margin: 8px 0;
+}
+
+.card .desc {
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9em;
+  letter-spacing: 1px;/*para aumentar o espaço entre as letras de todos os títulos de nível 3
+   em seu site. */
+}
+
+footer a {
+  color: #ff69b4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

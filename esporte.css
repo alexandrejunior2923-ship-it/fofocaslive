@@ -1,0 +1,44 @@
+/* esportes.css */
+:root{
+    --pink:#f06aa6;
+    --bg:#efefef;
+    --card:#fff;
+    --accent:#2b2b2b;
+  }
+  
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,Roboto,Arial;background:var(--bg);color:var(--accent);}
+  
+  /* header */
+  .site-header{background:var(--pink);color:#fff;padding:16px 0}
+  .wrap{width:min(1100px,94%);margin:0 auto}
+  .brand{font-weight:800;font-size:28px;display:inline-block;margin-right:18px}
+  .main-nav a{color:#fff;margin-right:12px;text-decoration:none}
+  .main-nav a.active{text-decoration:underline 2px rgba(255,255,255,0.25)}
+  
+  /* hero */
+  .esporte-hero{padding:44px 0;background:linear-gradient(180deg, rgba(0,0,0,0.03), transparent)}
+  .esporte-hero h2{font-size:30px}
+  .esporte-hero p{opacity:0.9}
+  
+  /* scores */
+  .scores{padding:20px 0}
+  .score-cards{display:flex;gap:16px;flex-wrap:wrap}
+  .score{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.05);width:100%;max-width:460px}
+  .teams{display:flex;gap:12px;align-items:center;font-size:18px;margin-bottom:8px}
+  .teams span{background:var(--pink);color:#fff;padding:6px 10px;border-radius:8px;font-weight:800}
+  
+  /* trainings grid */
+  .trainings{padding:28px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+  .card h4{margin-bottom:8px}
+  .btn{display:inline-block;padding:8px 12px;background:var(--pink);color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+  
+  /* footer */
+  .site-footer{padding:16px 0;background:#222;color:#fff;margin-top:36px;text-align:center}
+  
+  /* responsive */
+  @media (max-width:720px){
+    .score-cards{flex-direction:column}
+  }
