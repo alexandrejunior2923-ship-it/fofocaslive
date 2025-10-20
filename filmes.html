@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias de Filmes</title>
+  <style>
+    :root {
+      --rosa: #ec4899;
+      --rosa-hover: #db2777;
+      --cinza: #6b7280;
+      --fundo: #f9fafb;
+      --branco: #fff;
+      --texto: #1f2937;
+      --radius: 14px;
+      --sombra: 0 6px 14px rgba(0,0,0,0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 10px 10px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--texto);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--branco);
+      border-radius: var(--radius);
+      box-shadow: var(--sombra);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px 18px 22px;
+    }
+
+    .card-body h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: var(--texto);
+    }
+
+    .card-body p {
+      margin: 6px 0 14px;
+      font-size: 0.9rem;
+      color: var(--cinza);
+    }
+
+    .btn {
+      background: var(--rosa);
+      color: var(--branco);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--rosa-hover);
+    }
+
+    /* Notícias completas */
+    .noticia {
+      background: var(--branco);
+      box-shadow: var(--sombra);
+      border-radius: var(--radius);
+      padding: 26px;
+      margin-top: 50px;
+    }
+
+    .noticia img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
+
+    .noticia h2 {
+      color: var(--rosa-hover);
+      margin-top: 0;
+    }
+
+    .noticia p {
+      text-align: justify;
+      color: var(--texto);
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--cinza);
+      font-size: 0.85rem;
+      margin: 40px 0 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #ff5fb7; /* Rosa vibrante */
+  padding: 30px 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #222;
+}
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="container">
+      <h1>fofocaslive</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./jogadores.html">Jogadores Famosos</a></li>
+          <li><a href="./TV_cinema.html">TV & Cinema</a></li>
+          <li><a href="./contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="container">
+
+
+    <!-- Cards principais -->
+    <div class="grid">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/M5Xz19w_lNk/maxresdefault.jpg" alt="O Telefone Preto 2">
+        <div class="card-body">
+          <h3>O Telefone Preto 2</h3>
+          <p>Resumo curto da notícia para atrair leitura.</p>
+          <a href="#noticia1" class="btn">Ler mais</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/nZqygEsg9HY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmuUx7fbiGEYxrjDZTlIAogYjFnw" alt="FNAF 2">
+        <div class="card-body">
+          <h3>FNAF 2</h3>
+          <p>O que esperar da continuação?</p>
+          <a href="#noticia2" class="btn">Ler mais</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://updateordie.com/wp-content/uploads/2025/07/copia-de-avatar-character-red-headdress.jpg" alt="Avatar">
+        <div class="card-body">
+          <h3>Avatar</h3>
+          <p>Revelações e curiosidades do set.</p>
+          <a href="#noticia3" class="btn">Ler mais</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Notícias completas -->
+
+    <!-- Notícia 1 -->
+    <section class="noticia" id="noticia1">
+      <img src="https://i.ytimg.com/vi/M5Xz19w_lNk/maxresdefault.jpg" alt="Cena O Telefone Preto 2">
+      <h2>O Telefone Preto 2</h2>
+      <p>A sequência do sucesso de terror "O Telefone Preto" promete ampliar o universo sombrio criado por Scott Derrickson. O novo capítulo deve explorar as origens do misterioso telefone e o passado do vilão interpretado por Ethan Hawke.</p>
+      <p>As filmagens ocorreram em locações nos Estados Unidos e mantêm o mesmo clima claustrofóbico e psicológico do primeiro longa. Segundo o diretor, a proposta é aprofundar os traumas das vítimas e dar novas camadas ao enredo sobrenatural.</p>
+      <p>A estreia está prevista para o segundo semestre de 2025, com distribuição da Blumhouse. Fãs esperam que o novo filme traga mais respostas sobre o passado do assassino e o poder do telefone preto.</p>
+    </section>
+
+    <!-- Notícia 2 -->
+    <section class="noticia" id="noticia2">
+      <img src="https://i.ytimg.com/vi/nZqygEsg9HY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmuUx7fbiGEYxrjDZTlIAogYjFnw" alt="FNAF 2 poster">
+      <h2>FNAF 2: O que esperar da continuação?</h2>
+      <p>Após o sucesso mundial de "Five Nights at Freddy’s", a Blumhouse confirmou oficialmente a sequência. A nova produção deve trazer de volta os icônicos animatrônicos, mas com uma história mais sombria e centrada em novos personagens.</p>
+      <p>Fontes ligadas à produção revelam que o segundo filme será inspirado em elementos do jogo "FNAF 2", considerado um dos mais assustadores da franquia. O enredo deve abordar o colapso da pizzaria e o surgimento de novos segredos sobre a família Afton.</p>
+      <p>A estreia é aguardada para o final de 2025, com maior foco em suspense psicológico e efeitos práticos. Fãs já especulam o retorno de Matthew Lillard em um papel ainda mais importante.</p>
+    </section>
+
+    <!-- Notícia 3 -->
+    <section class="noticia" id="noticia3">
+      <img src="https://updateordie.com/wp-content/uploads/2025/07/copia-de-avatar-character-red-headdress.jpg" alt="Avatar bastidores">
+      <h2>Avatar: Revelações e curiosidades do set</h2>
+      <p>James Cameron revelou detalhes inéditos sobre os bastidores de "Avatar: O Caminho da Água". O filme, que expandiu o universo de Pandora, apresentou novas tribos e ecossistemas criados com tecnologia de ponta de captura subaquática.</p>
+      <p>Os atores passaram meses em treinamento de apneia para gravar as cenas debaixo d’água. Kate Winslet chegou a prender a respiração por mais de sete minutos durante as filmagens, um recorde impressionante no cinema.</p>
+      <p>O diretor também confirmou que as próximas sequências já estão em produção simultânea e devem explorar conflitos políticos e espirituais entre as tribos Na’vi. As filmagens das partes 3 e 4 seguem em andamento na Nova Zelândia.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 fotocaslive — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>

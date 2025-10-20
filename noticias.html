@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notícias - Portal</title>
+  <style>
+    :root {
+      --fundo: #f3f4f6;
+      --branco: #fff;
+      --texto: #1f2937;
+      --cinza: #6b7280;
+      --principal: #e11d48;
+      --radius: 12px;
+      --sombra: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--principal);
+      color: var(--branco);
+      text-align: center;
+      padding: 20px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Cards principais */
+    .grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card {
+      background: var(--branco);
+      border-radius: var(--radius);
+      box-shadow: var(--sombra);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px 18px;
+    }
+
+    .card-content h3 {
+      font-size: 1.1rem;
+      margin: 0;
+      color: var(--texto);
+    }
+
+    .card-content p {
+      color: var(--cinza);
+      font-size: 0.9rem;
+      margin-top: 6px;
+      margin-bottom: 12px;
+    }
+
+    .card-content a {
+      display: inline-block;
+      background: var(--principal);
+      color: var(--branco);
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .card-content a:hover {
+      background: #be123c;
+    }
+
+    /* Notícia completa */
+    .noticia {
+      background: var(--branco);
+      border-radius: var(--radius);
+      box-shadow: var(--sombra);
+      margin-top: 40px;
+      padding: 24px 28px;
+    }
+
+    .noticia img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      height: 340px;
+      object-fit: cover;
+    }
+
+    .noticia h2 {
+      margin-top: 0;
+      color: var(--principal);
+    }
+
+    .noticia p {
+      color: var(--texto);
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--cinza);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    /* âncoras suaves */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #ff5fb7; /* Rosa vibrante */
+  padding: 30px 0;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #222;
+}
+
+  </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>fofocaslive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+  <header>
+    <div class="container">
+      <h1>fofocaslive</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./jogadores.html">Jogadores Famosos</a></li>
+          <li><a href="./TV_cinema.html">TV & Cinema</a></li>
+          <li><a href="./contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="container">
+    
+
+    <!-- Cards principais -->
+    <div class="grid">
+      <div class="card">
+        <img src="https://tv.sbt.com.br/_next/image?url=https%3A%2F%2Fstatic.sbt.com.br%2Fnoticias%2Fimages%2F281040.jpg&w=1080&q=90" alt="Ator e modelo">
+        <div class="card-content">
+          <h3>Traição? Ator é flagrado com modelo misteriosa</h3>
+          <p>Após 5 anos de casamento, o galã foi visto saindo de um hotel de luxo acompanhado. Fãs especulam separação.</p>
+          <a href="#noticia1">Leia mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2009/11/11/091111103713_sp466.jpg.webp" alt="Apagão no Brasil">
+        <div class="card-content">
+          <h3>Apagão em todas as regiões do país: o que causou a queda de energia?</h3>
+          <p>Ministério investiga falha no sistema elétrico que deixou cidades inteiras no escuro.</p>
+          <a href="#noticia2">Leia mais</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2025/10/15/754511490-ze-felipe-revela-detalhe-intimo-de-ana-castela-apos-critica-so-ontem.png" alt="Zé Felipe e Ana Castela">
+        <div class="card-content">
+          <h3>Zé Felipe revela detalhe íntimo de Ana Castela após crítica</h3>
+          <p>O cantor respondeu comentários sobre a relação com bom humor nas redes sociais.</p>
+          <a href="#noticia3">Leia mais</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notícia 1 -->
+    <div class="noticia" id="noticia1">
+      <img src="https://tv.sbt.com.br/_next/image?url=https%3A%2F%2Fstatic.sbt.com.br%2Fnoticias%2Fimages%2F281040.jpg&w=1080&q=90" alt="Ator e modelo misteriosa">
+      <h2>Traição? Ator é flagrado com modelo misteriosa</h2>
+      <p>Após 5 anos de casamento, o ator foi visto deixando um hotel de luxo na zona sul da cidade ao lado de uma mulher ainda não identificada. O casal, conhecido por manter a vida pessoal reservada, não se pronunciou oficialmente até o momento.</p>
+      <p>Fontes próximas afirmam que o relacionamento enfrentava crises nos últimos meses. “Eles já vinham se distanciando, mas continuavam aparecendo juntos em eventos públicos”, afirmou uma pessoa ligada à produção do ator.</p>
+      <p>Nas redes sociais, fãs notaram que o artista removeu diversas fotos com a esposa. A assessoria limitou-se a dizer que “a vida pessoal não será comentada no momento”.</p>
+      <p>Enquanto isso, a modelo vista ao lado dele continua sendo um mistério. A repercussão nas redes foi imediata, com especulações sobre uma possível separação iminente.</p>
+    </div>
+
+    <!-- Notícia 2 -->
+    <div class="noticia" id="noticia2">
+      <img src="https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2009/11/11/091111103713_sp466.jpg.webp" alt="Apagão nacional">
+      <h2>Apagão em todas as regiões do país: o que causou a queda de energia?</h2>
+      <p>Na madrugada desta terça-feira, diversas capitais e cidades de pequeno porte registraram queda total de energia elétrica. O apagão durou de 20 minutos a 2 horas em algumas regiões.</p>
+      <p>De acordo com o Ministério de Minas e Energia, uma perturbação de grande porte no sistema interligado nacional causou uma desconexão em cascata que afetou o fornecimento de energia. O operador nacional (ONS) iniciou o restabelecimento gradativo das redes.</p>
+      <p>Hospitais e serviços essenciais foram priorizados durante a recuperação. A origem da falha ainda é investigada, mas técnicos não descartam causas climáticas ou falhas em equipamentos de transmissão de alta tensão.</p>
+      <p>O governo deve divulgar um relatório completo ainda esta semana. Especialistas apontam a necessidade de investimentos urgentes na infraestrutura energética para evitar novos incidentes dessa escala.</p>
+    </div>
+
+    <!-- Notícia 3 -->
+    <div class="noticia" id="noticia3">
+      <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2025/10/15/754511490-ze-felipe-revela-detalhe-intimo-de-ana-castela-apos-critica-so-ontem.png" alt="Zé Felipe e Ana Castela juntos">
+      <h2>Zé Felipe revela detalhe íntimo de Ana Castela após crítica</h2>
+      <p>O cantor Zé Felipe usou as redes sociais para responder a críticas sobre a exposição de seu relacionamento com Ana Castela. De forma bem-humorada, ele compartilhou uma foto e comentou: “Só ontem”, em referência a comentários sobre a frequência de postagens do casal.</p>
+      <p>A resposta viralizou, acumulando milhares de curtidas e comentários. Muitos seguidores elogiaram o bom humor e a leveza do cantor ao lidar com críticas.</p>
+      <p>A assessoria de imprensa afirmou que o casal prefere manter a vida pessoal com naturalidade e não se incomoda com a curiosidade do público. “Eles seguem focados em novos projetos profissionais e no relacionamento saudável que construíram”, informou a nota.</p>
+      <p>Nas redes, fãs dividiram opiniões: alguns pediram mais privacidade, enquanto outros reforçaram o apoio ao casal. A postagem segue entre os assuntos mais comentados da semana.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Portal de Notícias. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
